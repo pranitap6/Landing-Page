@@ -1,6 +1,8 @@
 # Landing-Page
 The is inspried by google chrome extension "Moment".
 
+![Landing_page](Landing.png)
+
 The landing page is encapsulates three main sections.
 
 ---
