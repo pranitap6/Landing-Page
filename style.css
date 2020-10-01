@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  
+  color: white;
+  font-family: 'Noto Serif JP', serif;
+  position: relative;
+  background-color: #005086;
+  
+}
+.to-do{
+ height: 50vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+  border: solid 2px white;
+  width: 15%;
+  margin-left: 0.5rem;
+}
+
+.to-do h2{
+ letter-spacing: 0.1rem;  
+ margin-left: 1.5rem;
+ 
+}
+.to-do input[type="text"]{
+  width: 45%;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  outline: none;
+  color: black;
+  border: 2px solid white;
+  transition: width 0.5s ease-out;
+  
+}
+.to-do input[type="text"]:focus{
+  width: 75%;
+}
+input::placeholder{
+  color: black;
+}
+.ideas-list li{
+  margin-bottom: 0.5rem;
+}
+.ideas-list{
+  list-style: none;
+  margin-left: 1.5rem;
+
+}
+.weather{
+  border: solid 2px white;
+  width: 15%;
+  height: 30vh;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+ 
+
+}
+.weather h2{
+  padding-top: 1rem;
+}
+.date{
+  text-align: center;
+}
+
+.temp{
+ margin-left: 25%;
+ font-size: 1.5rem;
+ padding-top: 1rem;
+}
+.main-content{
+  position: absolute;
+  left: 15.5%;
+  top:0%;
+  height: 83vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+ 
+
+}
+.main-content h1,h2,h3{
+  margin-bottom: 1rem;
+}
+.main-content h1{
+  font-size: 5rem;
+}
+.focus{
+  opacity: 0.8;
+}
+.today{
+  margin-left: 0.5rem;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width : 768px){
+  .weather,  .temp{
+    font-size: 10px;
+  }
+  .to-do input[type="text"]{
+      opacity: 0;
+      pointer-events: none;
+  }
+  .to-do{
+    font-size: 10px;
+  }
+  .to-do h2{
+    letter-spacing: 0rem;
+    margin-left: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  .main-content h1{
+    font-size: 3rem;
+  }
+  .main-content h2{
+    font-size: 1rem;
+  }
+  .main-content h3{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-height : 500px){
+  .weather{
+    opacity: 0;
+  }
+  .to-do{
+    position: absolute;
+    top:50%;
+    font-size: 10px;
+    
+  }
+}
