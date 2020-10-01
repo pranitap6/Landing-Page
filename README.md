@@ -15,14 +15,21 @@ The landing page is encapsulates three main sections.
   -  The Focus of the day section is also editable so that new entries can be made every new day.
   
       ![Greeting_Focus](Focus.png)
+        
+---
   
 2. Weather Content section , The Date and Temperature section.
   - The Date and temperature is updated when the page loads on the top right corner of the page.
+  
       ![Weather_Date](Weather.png)
+      
   - Weather is recorded as per open weather api and user's geolocation coordinates.  
+  
+---
   
 3. To-do Section.
     - The user can dump ideas/action items in the area to get started with the day.
-        ![to-do](TO-Do.png)
+    
+        ![to-do](To-Do.png)
     
   
