@@ -82,7 +82,7 @@ function setGreeting(){
     document.body.style.backgroundColor = '#d49a89';
   }else{
     //night
-    greeting.textContent = "Good Night";
+    greeting.textContent = "Good Evening";
     document.body.style.backgroundColor = '#145374';
   }
 }
